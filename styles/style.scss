@@ -1,7 +1,7 @@
 $circleColor : #F87060 ;
 $navCurrentColor : #102542; 
 $textColor : #FFFFFF;
-$backgroundColor : #CDD7D6;
+$backgroundColor : white;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500;1,600&display=swap');
 
@@ -24,7 +24,9 @@ body {
     // background: url(/Images/silke-buytaert-vQdePtLH01o-unsplash.jpg);
     color: $textColor;
     font-family: 'Montserrat', sans-serif;
-    background: $backgroundColor;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: $textColor;
 }
 
 // End Resets
@@ -32,13 +34,14 @@ body {
 // Header 
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
 
 header {
     height: 10vh;
+    background: $backgroundColor;
     .header-content {
         display: flex;
         justify-content: space-between;
@@ -79,11 +82,13 @@ header {
     .circle-background {
         display: flex;
         width: 70%;
-        height: 600px;
+        min-width: 70%;
+        min-height: 500px;
         align-items: center;
         justify-content: center;
-        background: $circleColor;
-        border-radius: 50%;
+    }
+    img {
+        min-width: 300px;
     }
     h1 {
         color: $navCurrentColor;
@@ -101,11 +106,11 @@ header {
         border-radius: 5rem;
     }
     .hero-img {
-        width: 30%;
+        width: 45%;
     }
     .text-container {
         width: 40%;
-        margin-left: 2rem;
+        margin-left: 3rem;
     }
 }
 
@@ -164,6 +169,12 @@ footer {
     }
     .card {
         min-width: 400px;
-        margin: 4rem 3rem;
+        margin: 4rem 2rem;
     }
 }
+
+.hamburger-menu {
+    display: none;
+}
+
+
