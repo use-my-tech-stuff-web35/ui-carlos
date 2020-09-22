@@ -182,9 +182,13 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.cards-container .team-grid::-webkit-scrollbar {
+  display: none;
 }
 
 .cards-container .team-lead {
@@ -201,6 +205,7 @@ footer a {
 }
 
 .cards-container .card {
-  margin: 4rem 0;
+  min-width: 400px;
+  margin: 4rem 3rem;
 }
 /*# sourceMappingURL=style.css.map */
