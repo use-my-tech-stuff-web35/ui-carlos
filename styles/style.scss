@@ -87,6 +87,7 @@ header {
     }
     h1 {
         color: $navCurrentColor;
+        font-size: 4rem;
     }
     p {
         margin: 2rem 0;
@@ -128,3 +129,35 @@ footer {
 
 }
 
+// about
+
+.team-title {
+    color: $navCurrentColor;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.cards-container {
+    text-align: center;
+    h3{
+        color: $navCurrentColor;
+        margin: 1rem 0;
+    }
+    p {
+        color: black;
+    }
+    .team-grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    .team-lead {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        border-radius: 3rem;
+    }
+    .card {
+        margin: 4rem 0;
+    }
+}
