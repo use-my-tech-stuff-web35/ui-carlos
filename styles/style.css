@@ -104,6 +104,7 @@ header a {
 
 .landing-content h1 {
   color: #102542;
+  font-size: 4rem;
 }
 
 .landing-content p {
@@ -156,5 +157,50 @@ footer a {
   color: #102542;
   font-family: 'Montserrat', sans-serif;
   margin-left: 10rem;
+}
+
+.team-title {
+  color: #102542;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.cards-container {
+  text-align: center;
+}
+
+.cards-container h3 {
+  color: #102542;
+  margin: 1rem 0;
+}
+
+.cards-container p {
+  color: black;
+}
+
+.cards-container .team-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards-container .team-lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards-container img {
+  border-radius: 3rem;
+}
+
+.cards-container .card {
+  margin: 4rem 0;
 }
 /*# sourceMappingURL=style.css.map */
