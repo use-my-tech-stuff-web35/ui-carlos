@@ -76,7 +76,7 @@ header {
 
 .landing-content {
     display: flex;
-    height: 85vh;
+    height: 90vh;
     align-items: center;
     justify-content: center;
     .circle-background {
@@ -114,10 +114,54 @@ header {
     }
 }
 
+// Why us 
+
+.why-us {
+    display: flex;
+    margin: 7% 0;
+    justify-content: space-between;
+    .why-us-container {
+        width: 30%;
+    }
+    h3 {
+        color: $navCurrentColor;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+}
+
+.hosting-steps-cont {
+    display: flex;
+    justify-content: space-between;
+    .why-us-container {
+        width: 30%;
+    }
+    h3 {
+        color: $navCurrentColor;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+    .circle-number {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        border-radius: 50%;
+        background: $navCurrentColor;
+    }
+}
+
+.why-us-title {
+    color: $navCurrentColor;
+    text-align: center;
+    font-size: 4rem;
+    margin: 5% 0;
+}
+
+
 footer {
     height: 5hv;
     display: flex;
     align-items: center;
+    margin: 5% 0;
     .footer-content {
         display: flex;
         justify-content: space-between;
