@@ -238,7 +238,14 @@ footer {
 }
 
 @media screen and (max-width: 1225px) {
+    .container {
+        width: 95%;
+    }
     header {
+        height: 100%;
+        .logo {
+            margin: 3rem 0;
+        }
         li {
             margin-left: 4rem;
         }
@@ -248,11 +255,21 @@ footer {
             margin-left: 4rem;
         }
     }
+    .landing-content {
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 925px) {
     body {
         text-align: left;
+    }
+    .hamburger-menu {
+        display: inline-block;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        font-size: 3rem;
     }
     header {
         nav {
