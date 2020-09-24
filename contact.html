@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Contact UseMyTech</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>UseMyTech</title>
 </head>
-
 <body>
     <header>
         <div class="container header-content">
             <div class="logo"><a href="index.html"><img src="/Images/Untitled-2.png" alt="UseMyTech-Logo"></a></div>
-            <div class="hamburger-menu">
-                <a href="#"><i class="fas fa-bars"></i></a>
-            </div>
+            
             <nav>
                 <ul>
                     <li><a class="current" href="index.html">home</a></li>
@@ -26,20 +22,41 @@
             </nav>
         </div>
     </header>
-    <h1>Contact UseMyTech</h1>
-    <form>
-        <input type="radio" id="loaner" name="Loaner" value="loaner">
-        <label for="Loaner">Loaner</label>
-        <input type="radio" id="renter" name="Renter" value="renter">
-        <label for="Renter">Renter</label><br>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="First"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Last"><br>
-        <label for="email">Email Address:</label><br>
-        <input type="text" id="email" name="email" value="your@email.stuff"><br>
-        <label for="message">Your Message:</label><br>
-        <textarea name="message" cols="50"
-            rows="5">UseMyTech is just the best...please take all my money.</textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+    
+    <section class="container">
+        <h1 class="contact-title">Contact UseMyTech</h1>
+        <div class="form-container">
+            <form>
+                <input type="radio" id="loaner" name="Loaner" value="loaner">
+                <label for="Loaner">Loaner</label>
+                <input type="radio" id="renter" name="Renter" value="renter">
+                <label for="Renter">Renter</label><br>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="First"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Last"><br>
+                <label for="email">Email Address:</label><br>
+                <input type="text" id="email" name="email" value="your@email.stuff"><br>
+                <label for="message">Your Message:</label><br>
+                <textarea name="message" cols="50"
+                    rows="5">UseMyTech is just the best...please take all my money.</textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+    </section>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="copy">
+                <p>&copy;2020UseMyTech. All rights reserved.</p>
+            </div>
+            <div class="socials">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

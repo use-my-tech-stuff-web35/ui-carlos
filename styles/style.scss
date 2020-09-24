@@ -28,6 +28,8 @@ body {
     // background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     color: $circleColor;
     text-align: justify;
+    line-height: 1.3;
+    letter-spacing: 1.25px;
 }
 
 // End Resets
@@ -53,8 +55,7 @@ header {
     }
     .logo {
         display: flex;
-        align-items: center;
-        
+        align-items: center;  
     }
     ul {
         display: flex;
@@ -175,7 +176,6 @@ footer {
     height: 5hv;
     display: flex;
     align-items: center;
-    margin: 5rem 0;
     .footer-content {
         display: flex;
         justify-content: space-between;
@@ -218,6 +218,10 @@ footer {
         color: $circleColor;
         margin-bottom: 2rem;
     }
+
+    a {
+        color: $navCurrentColor;
+    }
     
     .team-lead {
         display: flex;
@@ -244,7 +248,24 @@ footer {
     display: none;
 }
 
+.contact-title {
+    color: $navCurrentColor;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.form-container {
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $navCurrentColor;
+}
+
 @media screen and (max-width: 1225px) {
+    body {
+        text-align: left;
+    }
     .container {
         width: 95%;
     }
@@ -264,6 +285,7 @@ footer {
     }
     .landing-content {
         height: 100%;
+        margin: 5rem 0;
     }
 }
 
@@ -271,17 +293,16 @@ footer {
     body {
         text-align: left;
     }
-    .hamburger-menu {
-        display: inline-block;
-        position: absolute;
-        top: 4rem;
-        right: 4rem;
-        font-size: 3rem;
-    }
     header {
-        nav {
-            display: none;
+        height: 100%;
+        li {
+            margin-left: 1.5rem;
         }
+
+        a {
+            font-size: 1.5rem;
+        }
+        
     }
     .landing-content {
         margin: 3rem 0;
@@ -332,5 +353,49 @@ footer {
         a {
             margin-left: 0;
         }
+    }
+}
+
+@media screen and (max-width: 667px) {
+    body {
+        text-align: ;
+    }
+    .header-content {
+        justify-content: space-around;
+        ul {
+            flex-direction: column;
+            text-align: right;
+            height: 100%;
+        }
+        li {
+            margin: .5rem 0;
+            padding: .5rem 0;
+            width: 100%;
+        }
+    }
+    .logo {
+        text-align: center;
+        margin: 0;
+    }
+    .container {
+        .why-us {
+            text-align: center;
+        }
+
+        .hosting-steps-cont {
+            text-align: center;
+        }
+        
+        .why-us-container {
+            margin: 1rem 0;
+        }
+    }
+    .circle-background {
+        .text-container {
+            a {
+                text-align: center;
+            }
+        }
+        
     }
 }
