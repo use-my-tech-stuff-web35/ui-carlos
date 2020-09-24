@@ -103,10 +103,6 @@ header a {
           justify-content: center;
 }
 
-.landing-content img {
-  min-width: 300px;
-}
-
 .landing-content h1 {
   color: #102542;
   font-size: 4rem;
@@ -133,6 +129,13 @@ header a {
 .landing-content .text-container {
   width: 40%;
   margin-left: 3rem;
+}
+
+.photo {
+  background: url(https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80) fixed;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .why-us {
@@ -322,11 +325,15 @@ footer a {
   header nav {
     display: none;
   }
+  .landing-content {
+    margin: 3rem 0;
+  }
   .landing-content .circle-background {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 80%;
   }
   .landing-content h1 {
     text-align: left;
@@ -337,27 +344,35 @@ footer a {
   }
   .landing-content .hero-img {
     width: 100%;
+    margin: 0;
   }
   .landing-content .text-container {
     width: 100%;
+    margin: 0;
   }
   .why-us {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .why-us .why-us-container {
-    width: 100%;
+    width: 90%;
   }
   .hosting-steps-cont {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .container .why-us-container {
-    width: 100%;
+    width: 90%;
   }
   footer .footer-content {
     -webkit-box-orient: vertical;

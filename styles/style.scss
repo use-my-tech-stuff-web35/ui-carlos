@@ -88,9 +88,9 @@ header {
         align-items: center;
         justify-content: center;
     }
-    img {
-        min-width: 300px;
-    }
+    // img {
+    //     min-width: 300px;
+    // }
     h1 {
         color: $navCurrentColor;
         font-size: 4rem;
@@ -114,6 +114,13 @@ header {
         width: 40%;
         margin-left: 3rem;
     }
+}
+
+.photo {
+    background: url(https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80) fixed;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 // Why us 
@@ -277,8 +284,10 @@ footer {
         }
     }
     .landing-content {
+        margin: 3rem 0;
         .circle-background {
             flex-direction: column;
+            width: 80%;
         }
         h1 {
             text-align: left;
@@ -289,23 +298,27 @@ footer {
         }
         .hero-img {
             width: 100%;
+            margin: 0;
         }
         .text-container {
             width: 100%;
+            margin: 0;
         } 
     }
     .why-us {
         flex-direction: column;
+        justify-content: center;
         .why-us-container {
-            width: 100%;
+            width: 90%;
         }
     }
     .hosting-steps-cont {
         flex-direction: column;
+        justify-content: center;
     }
     .container {
         .why-us-container {
-            width: 100%;
+            width: 90%;
         }
     }
     footer {
