@@ -131,6 +131,7 @@ header a {
 .landing-content .text-container {
   width: 40%;
   margin-left: 3rem;
+  
 }
 
 .photo {
@@ -398,6 +399,7 @@ footer a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    
   }
   .container .why-us-container {
     width: 90%;
@@ -414,6 +416,9 @@ footer a {
   }
   footer a {
     margin-left: 0;
+  }
+  .circle-number{
+    margin:2rem 0 0 0;
   }
 }
 
@@ -449,6 +454,9 @@ footer a {
     margin: 1rem 0;
   }
   .circle-background .text-container a {
+    text-align: center;
+  }
+  .text-container{
     text-align: center;
   }
 }
